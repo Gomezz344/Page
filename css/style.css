@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50vw;
+    margin-left: 20vw;
+    padding: 15px;
+}
+
+
+a:hover {
+    background-color: transparent;
+    border-radius: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e1c7c7;
+}
