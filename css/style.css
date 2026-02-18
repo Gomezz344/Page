@@ -5,11 +5,43 @@
     font-family: sans-serif;
 }
 
+:root {
+    --color-bg:         #f0e7e0;
+    --color-dark:       #1d1d1d;
+    --color-primary:    #019281;
+    --color-gray:       #a0a09f;
+    --color-bg-alt:     #ede7de;
+    --color-teal-light: #a3dcd4;
+    --color-teal-dark:  #025a4e;
+    --color-lavender:   #d094e5;
+    --color-slate:      #4c6763;
+    --color-dark-green: #364442;
+    --color-white:      #ffffff;
+}
+
+[data-theme="dark"] {
+    --color-bg:      #364442;
+    --color-dark:    #ede7de;
+    --color-primary: #a3dcd4;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: var(--color-dark); /* ✅ texto principal */
+    background: 
+        radial-gradient(ellipse at top left, #d4e8a0 0%, transparent 50%),
+        radial-gradient(ellipse at top right, #f5c8d0 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, #c8e8d0 0%, transparent 50%),
+        var(--color-bg); /
+}
+
 .header-container {
-    background-color: aliceblue;
     width: 100%;
     padding: 20px 40px;
-    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .nav-s {
@@ -22,11 +54,13 @@
     list-style: none;
     gap: 35px;
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    padding: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     width: 500px;
-  
 }
 
 .nav-item {
@@ -37,10 +71,50 @@
 }
 
 .nav-item.active {
-    background-color: gray;
+    background-color: var(--color-bg-alt); 
     border-radius: 50px;
 }
+
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-teal-dark);
+    transition: color 0.2s ease;
+}
+
+.nav-item.active a {
+    color: var(--color-teal-dark);
+}
+
+.nav-item:not(.active):hover a {
+    color: var(--color-slate);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-line {
+    font-size: 100px;
+    color: var(--color-teal-dark);
+}
+
+.star {
+    width: 48px;
+    position: relative;
+    left: 500px;
+    bottom: 120px;
+
+}
+
+.subtitle {
+    width: 450px;
 }
