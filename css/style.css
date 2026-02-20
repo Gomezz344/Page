@@ -31,12 +31,12 @@ html, body {
 }
 
 body {
-    color: var(--color-dark); /* ✅ texto principal */
+    color: var(--color-dark);
     background: 
         radial-gradient(ellipse at top left, #d4e8a0 0%, transparent 50%),
         radial-gradient(ellipse at top right, #f5c8d0 0%, transparent 50%),
         radial-gradient(ellipse at bottom left, #c8e8d0 0%, transparent 50%),
-        var(--color-bg); /
+        var(--color-bg); 
 }
 
 .header-container {
@@ -105,6 +105,7 @@ a {
 .title-line {
     font-size: 100px;
     color: var(--color-teal-dark);
+    margin-top: 50px;
 }
 
 .star {
@@ -116,5 +117,10 @@ a {
 }
 
 .subtitle {
-    width: 450px;
+    width: 600px;
+    font-size: 22px;
 }
+
+
+
+
