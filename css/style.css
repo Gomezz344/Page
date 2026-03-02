@@ -105,31 +105,43 @@ a {
 .title-line {
     font-size: 100px;
     color: var(--color-teal-dark);
-    margin-top: 50px;
+    margin-top: 20px;   
+}
+
+.l1 {
+    position: relative;
+    top: 70px;
 }
 
 .star {
-    width: 48px;
-    position: relative;
-    left: 500px;
-    bottom: 120px;
+    width: 58px;
+}
 
+.s1 {
+    position: relative;
+    left: 55%;
+    bottom: 70px;  
+}
+
+.s2 {
+    position: relative;
+    right: 40%;
+    bottom: 25px;
 }
 
 .subtitle {
     width: 600px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .cards-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 10rem;
-    height: 60vh;
-    margin-top: 10vh;
-    gap: 25vh;
-
+    width: 100%;
+    margin: 10vh auto 0 auto;
+    gap: 25px;
+    border: 1px solid black;
 }
 
 
@@ -151,6 +163,13 @@ a {
     background-color: #7dd4c8;;
 }
 
+.orange {
+    background-color: orange;
+}
+
+.aqua {
+    background-color: aquamarine;
+}
 
 .tarjeta-main {
     position: relative;
@@ -193,11 +212,36 @@ a {
     border-radius: 20px 0 ;
 }
 
-.c2 {
-    width: 800px;
+.c1 {
     position: relative;
-    right: 160px;
+    left: 40px;
+    width: 35vw;
+    height: 80vh;
 }
+
+.c2 {
+    width: 50vw;
+    position: relative;
+    right: 90px;
+    height: 80vh;
+}
+
+.c3 {
+    width: 710px;
+    position: relative;
+    left: 120px;
+}
+
+.c4 {
+    position: relative;
+    left: 230px;
+}
+
+.i2 {
+    position: relative;
+    left: 92px;
+}
+
 
 
 
