@@ -23,6 +23,7 @@
     --color-dark-green: #364442;
     --color-white:      #ffffff;
     --font-global: 'Satoshi';
+    --color-subtitle: rgb(76, 103, 99);
 }
 
 [data-theme="dark"] {
@@ -140,6 +141,7 @@ a {
 .subtitle {
     width: 600px;
     font-size: 16px;
+    color: var(--color-subtitle);
 }
 
 .cards-cont {
@@ -182,6 +184,14 @@ a {
 
 .aqua {
     background-color: #bfdbfe;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: #1C1C1E;
 }
 
 .tarjeta-main {
@@ -250,7 +260,6 @@ a {
     width: 850px;
     position: relative;
     left: 40px;
-
     height: 550px;
     transition: transform 0.3s ease;
 }
@@ -261,6 +270,25 @@ a {
     left: 80px;
     height: 550px;
     transition: transform 0.3s ease;
+}
+
+.c5 {
+    color: rgb(54, 68, 66);
+    width: 850px;
+    height: 550px;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 40px;
+    
+}
+
+.c6{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 80px;
+    transition: transform 0.3s ease;
+    width: 540px;
+    height: 550px;
 }
 
 .i1 {
@@ -291,6 +319,41 @@ a {
     left: 40px;
     
 }
+
+.i5 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.i6 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.in-progress-title {
+    color: var(--color-teal-dark);
+    font-size: 140px;
+}
+
+.container-2 > p {
+    width: 680px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
 
 
 
