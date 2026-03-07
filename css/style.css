@@ -153,8 +153,37 @@ a {
     margin: 10vh auto 0 auto;
     gap: 25px;
     height: 1300px;
+}
+
+.a-p {
+    display: contents;
+    position: relative;
+}
+
+.stars3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
+
+.svgs {
+    position: relative;
+    width: 100px;
+    left: 150px;
+    bottom: 60px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translate3d(0, 10px, 0);
 
 }
+
+.a-p:hover .svgs {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 
 
 .tarjeta-wrapper {
@@ -166,9 +195,8 @@ a {
     width: 100%;
     height: 60vh;
     overflow: hidden;
+    transition: top 0.3s ease, transform 0.3s ease;
 }
-
-
 
 .purple {
     background-color: #c084fc;
@@ -226,11 +254,11 @@ a {
     font-size: 40px;
     position: relative;
     left: 5px;
-
 }
 
 .imgs {
     border-radius: 20px 0 ;
+    transition: top 0.3s ease, transform 0.3s ease;
 }
 
 .c1 {
@@ -239,42 +267,38 @@ a {
     width: 35vw;
     height: 80vh;
     top: 5px;
-
-    transition: transform 0.3s ease;
 }
 
-.tarjeta-wrapper:hover{
+
+
+.tarjeta-wrapper:hover {
     transform: scale(1.01);
-    .imgs {
-        position: relative;
-        top: 200px;
-        transition: 0.3s ease;
-    }
-
-    .i1 {
-        top: 120px;
-    }
-
-    .i4 {
-        top: 330px;
-    }
-
-    .i5 {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .i6 {
-        position: absolute;
-        top: 85%;
-        transition: 0.3s ease-in-out;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.10);
 }
 
+.tarjeta-wrapper:hover .imgs {
+    top: 200px;
+}
+
+.tarjeta-wrapper:hover .i1 {
+    top: 120px;
+}
+
+.tarjeta-wrapper:hover .i4 {
+    top: 330px;
+}
+
+.tarjeta-wrapper:hover .i5 {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tarjeta-wrapper:hover .i6 {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .c2 {
     top: 5px;
     width: 850px;
@@ -314,7 +338,7 @@ a {
     color: rgb(255, 255, 255);
     position: relative;
     left: 80px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
     width: 540px;
     height: 550px;
 }
