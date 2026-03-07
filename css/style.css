@@ -153,6 +153,7 @@ a {
     margin: 10vh auto 0 auto;
     gap: 25px;
     height: 1300px;
+    border: 1px solid black;
 }
 
 .a-p {
@@ -179,12 +180,71 @@ a {
 
 }
 
+.svg2 {
+    width: 600px;
+    position: relative;
+    left: 700px;
+    opacity: 0;
+    bottom: 50px;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translate3d(0, 10px, 0);
+}
+
+.svg3 {
+    position: relative;
+    top: 600px;
+    left: 400px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translate3d(0, 10px, 0);
+    z-index: 1;
+    opacity: 0;
+}
+
+.svg4 {
+    position: relative;
+    top: 750px;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translate3d(0, 10px, 0);
+    right: 10px;
+    opacity: 0;
+}
+
+.svg5 {
+    position: relative;
+    top: 580px;
+    left: 1100px;
+    transform: translate3d(0, 10px, 0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+}
+
 .a-p:hover .svgs {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
 
+.a-p:hover .svg2 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
+.a-p:hover .svg3 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.a-p:hover .svg4 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.a-p:hover .svg5 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
 .tarjeta-wrapper {
     border-radius: 60px;
@@ -360,7 +420,7 @@ a {
 .i3 {
     position: relative;
     height: 620px;
-    left: 550px;
+    left: 580px;
     top: 180px;
   
 }
@@ -387,8 +447,6 @@ a {
     border-radius: 0px;
 }
 
-
-
 .container-2 {
     display: flex;
     justify-content: center;
@@ -407,6 +465,7 @@ a {
     font-size: 22px;
     text-align: center;
 }
+
 
 
 
