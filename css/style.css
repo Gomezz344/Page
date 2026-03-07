@@ -245,6 +245,34 @@ a {
 
 .tarjeta-wrapper:hover{
     transform: scale(1.01);
+    .imgs {
+        position: relative;
+        top: 200px;
+        transition: 0.3s ease;
+    }
+
+    .i1 {
+        top: 120px;
+    }
+
+    .i4 {
+        top: 330px;
+    }
+
+    .i5 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .i6 {
+        position: absolute;
+        top: 85%;
+        transition: 0.3s ease-in-out;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .c2 {
@@ -294,8 +322,8 @@ a {
 .i1 {
     position: relative;
     height: 400px;
-    left: 70px;
-    top: 81px;
+    left: 300px;
+    top: 100px;
 }
 
 .i2 {
@@ -334,6 +362,8 @@ a {
     transform: translate(-50%, -50%);
     border-radius: 0px;
 }
+
+
 
 .container-2 {
     display: flex;
