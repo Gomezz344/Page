@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,28 +30,35 @@
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="title-container">
-          <span class="title-line l1">Hi. I'm Emmanuel.</span>
-          <img
-            class="star s1"
-            src="/assets/imgs/star-2.svg"
-            alt=""
-            aria-hidden="true"
-          />
-          <span class="title-line l2">A Designer.</span>
-          <img
-            class="star s2"
-            src="/assets/imgs/star-2.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </h1>
-        <p class="subtitle">
-          I'm passionate about crafting experiences that are engaging,
-          accessible, and user-centric.
-        </p>
-      </div>
+      <section class="container hero" aria-label="Hero">
+        <div class="mesh-layer mesh-layer--1" aria-hidden="true"></div>
+        <div class="mesh-layer mesh-layer--2" aria-hidden="true"></div>
+        <div class="mesh-layer mesh-layer--3" aria-hidden="true"></div>
+        <div class="mesh-layer mesh-layer--4" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <h1 class="title-container">
+            <span class="title-line l1">Hi. I'm Emmanuel.</span>
+            <img
+              class="star s1"
+              src="/assets/imgs/star-2.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="title-line l2">A Designer.</span>
+            <img
+              class="star s2"
+              src="/assets/imgs/star-2.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </h1>
+          <p class="subtitle">
+            I'm passionate about crafting experiences that are engaging,
+            accessible, and user-centric.
+          </p>
+        </div>
+      </section>
 
       <div class="cards-cont">
         <a href="pages/ai.html" class="a-p">
@@ -173,11 +180,7 @@
               <li><a href="#">CV</a></li>
               <li><a href="#">LinkedIn</a></li>
             </ul>
-            <button class="theme-btn" title="Toggle dark mode">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
-              </svg>
-            </button>
+            
           </div>
 
           <div class="footer-col">
@@ -188,32 +191,12 @@
           </div>
         </div>
       </div>
-      <div class="line-cont">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+      
+      <div
+        class="line-cont"
+        role="radiogroup"
+        aria-label="Theme selector"
+      ></div>
     </footer>
 
     <script src="js/script.js"></script>
