@@ -82,21 +82,29 @@ html[data-theme="dark"] body {
 }
 
 html[data-theme="dark"] body::before {
-    background: var(--color-page-bg, #1e3a2a);
+    background:
+        radial-gradient(ellipse at top left, var(--mesh-3, #4a6b35) 0%, transparent 55%),
+        radial-gradient(ellipse at top right, var(--mesh-1, #2d4a1e) 0%, transparent 55%),
+        radial-gradient(ellipse at bottom left, var(--mesh-2, #3d5c28) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, var(--mesh-6, #263d1a) 0%, transparent 62%),
+        var(--mesh-5, #1e3a2a);
 }
 
 .header-container {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 20px 40px;
+}
+
+html[data-theme="dark"] .header-container {
+    background: transparent;
 }
 
 .nav-s {
     display: flex;
     justify-content: center;
-        
 }
 
 .nav-menu {
@@ -104,20 +112,22 @@ html[data-theme="dark"] body::before {
     list-style: none;
     gap: 35px;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, 0.16);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
     padding: 6px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .nav-menu.scrolled {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.20);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    backdrop-filter: blur(22px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -157,7 +167,6 @@ a {
     align-items: center;
 }
 
-/* Hero mesh gradient (only in dark theme) */
 .hero {
     position: relative;
     overflow: hidden;
@@ -166,10 +175,11 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: transparent;
+    background-attachment: fixed;
 }
 
 html[data-theme="dark"] .hero {
-    background-color: var(--mesh-5, #1e3a2a);
+    background: transparent;
 }
 
 .hero__content {
@@ -190,14 +200,7 @@ html[data-theme="light"] .mesh-layer {
 }
 
 html[data-theme="dark"] .mesh-layer {
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.75;
-    mix-blend-mode: normal;
-    pointer-events: none;
-    will-change: transform;
+    display: none !important;
 }
 
 html[data-theme="dark"] .mesh-layer--1 {
@@ -240,15 +243,7 @@ html[data-theme="dark"] .mesh-layer--4 {
 }
 
 html[data-theme="dark"] .hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(to bottom, transparent, var(--color-page-bg, #1e3a2a));
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 @keyframes mesh-move-1 {
@@ -739,7 +734,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 40px;
+    gap: 50px;
     padding-bottom: 18px;
 }
 
