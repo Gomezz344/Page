@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="header-container">
       <nav class="nav-s">
         <ul class="nav-menu">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link">Work/</a>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Work/</a>
           </li>
           <li class="nav-item">
-            <a href="pages/about.html" class="nav-link">About</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="play" class="nav-link">Play</a>
@@ -36,25 +38,55 @@
             </h1>
             <div class="perfil-cont">
                 <div class="perfil-2">
-                    <img class="perfil" src="/assets/imgs/perfilimg.jpg" alt="">
+                    <img class="perfil" src="/assets/imgs/perfilimg.jpg" alt="Portrait of Emmanuel">
                 </div>
-                    <div>
-                        <h2 class="h2title">I'm a product designer working remotely from 9°C Dublin, Ireland.</h2>
-                        <p>
+                <div>
+                    <h2 class="h2title">I'm a product designer working remotely from 9°C Dublin, Ireland.</h2>
+                    <p>
                         Over the past 16 years, I've worked in various areas of digital design, including front-end development, email, marketing, and app UI/UX. I'm proud to have worn many hats.
-                        </p>
-                        <p>
+                    </p>
+                    <p>
                         These days, I focus on leading design at GiveDirectly, a nonprofit that lets donors send money directly to the world's poorest households.
-                        </p>
-                    </div>
+                    </p>
+                </div>
             </div>
 
             <div class="linea-tiempo">
-                <div class="cubic"></div>
-                <div class="dotfusion"></div>
-                <div class="freelance"></div>
-                <div class="help-scout"></div>
-                <div class="GiveDirectly"></div>
+                <div class="cubic">
+                    <div class="lt-info">
+                        <span class="lt-company">Cubic</span>
+                        <span class="lt-role">Design / Dev</span>
+                    </div>
+                    <span class="lt-years">7–10</span>
+                </div>
+                <div class="dotfusion">
+                    <div class="lt-info">
+                        <span class="lt-company">Dotfusion</span>
+                        <span class="lt-role">Design / Dev</span>
+                    </div>
+                    <span class="lt-years">10–14</span>
+                </div>
+                <div class="freelance">
+                    <div class="lt-info">
+                        <span class="lt-company">Freelance</span>
+                        <span class="lt-role">Design Consultant</span>
+                    </div>
+                    <span class="lt-years">12~</span>
+                </div>
+                <div class="help-scout">
+                    <div class="lt-info">
+                        <span class="lt-company">Help Scout</span>
+                        <span class="lt-role">Senior Product Designer</span>
+                    </div>
+                    <span class="lt-years">15–23</span>
+                </div>
+                <div class="GiveDirectly">
+                    <div class="lt-info">
+                        <span class="lt-company">GiveDirectly</span>
+                        <span class="lt-role">Senior Product Designer</span>
+                    </div>
+                    <span class="lt-years">22~</span>
+                </div>
             </div>
 
             <div>
@@ -69,7 +101,6 @@
                 </p>
             </div>
 
-
             <div>
                 <div>
                     <div>01</div>
@@ -80,7 +111,7 @@
                 </div>
                 <div>
                     <div>02</div>
-                    <h3>collaborate</h3>
+                    <h3>Collaborate</h3>
                     <p>
                         Good design is not created in a vacuum but rather in a shared space. It must be facilitated and iterated upon as a team. I aim to include stakeholders in my design process and create a collaborative environment that welcomes and encourages feedback.
                     </p>
@@ -109,20 +140,46 @@
                 <p>Outside work, I enjoy good coffee near my home by the sea, listening to and playing music, exploring the world with my partner, and playing with my Labrottie pup, Louie.</p>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            </div>
-
         </div>
     </main>
 
-    <script src="../scripts/script.js"></script>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-copyright">
+          © 2026 Emmanuel <span>•</span>
+          <a href="#">Colophon</a>
+          <div class="text-hov"></div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Elsewhere</h4>
+            <ul>
+              <li><a href="#">Figma</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Posts</a></li>
+              <li><a href="#">CV</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+            
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Message</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        class="line-cont"
+        role="radiogroup"
+        aria-label="Theme selector"
+      ></div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
